@@ -5,92 +5,881 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio of Padala Tejaswini - AI/ML Developer, Python and Web Developer.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+        content="Padala Tejaswini - Portfolio | Computer Science Undergraduate, AI/ML Developer, Full-Stack Web Developer, and Power BI Data Analytics Intern.">
+    <meta name="keywords"
+        content="Padala Tejaswini, Portfolio, AI Developer, Machine Learning, Computer Vision, Full-Stack Developer, Power BI, Python, Java">
+    <meta name="author" content="Padala Tejaswini">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Padala Tejaswini | Portfolio">
+    <meta property="og:description"
+        content="Computer Science Undergraduate skilled in Java, Python, Full-Stack Web Development, ML, and Data Analytics.">
+    <meta property="og:type" content="website">
 
     <title>Padala Tejaswini | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Padala Tejaswini</h1>
-            <p>AI/ML Developer | Computer Vision | Web Developer</p>
-            <a href="PADALA TEJASWINI - Resume.pdf" download class="btn">Download Resume</a>
+    <!-- Background Animated Elements -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-badge">PT</span>
+                <span class="logo-text">Tejaswini<span class="dot">.</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="pt 1page-resume.pdf" download class="btn btn-outline btn-sm">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Resume</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Results-driven Computer Science professional with expertise in AI/ML, computer vision, and full-stack web
-            development.
-            Passionate about building impactful solutions that merge artificial intelligence with real-world
-            applications.
-        </p>
-    </section>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-icon"></span>
+                    <span>Available for Software Engineering & AI Roles</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Padala Tejaswini</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I build <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Computer Science undergraduate (CGPA 8.1) skilled in Java, Python, and Full-Stack Web Development, with hands-on experience building ML-powered applications, Computer Vision tools, and Power BI dashboards.
+                </p>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>No-Parking Vehicle Detection System</h3>
-            <img src="no-parking.png" alt="No-Parking Vehicle Detection Screenshot">
-            <p>Developed with Python, OpenCV, NumPy. Achieved 85%+ accuracy in detecting unauthorized parking.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-rocket"></i> Explore Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-paper-plane"></i> Contact Me
+                    </a>
+                    <a href="pt 1page-resume.pdf" download class="btn btn-outline">
+                        <i class="fa-solid fa-file-pdf"></i> Download CV
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/Padala-tejaswini" target="_blank" aria-label="GitHub Profile" class="social-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tejaswinipadala42" target="_blank" aria-label="LinkedIn Profile" class="social-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:padalatejaswini2021@gmail.com" aria-label="Send Email" class="social-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919394347220" aria-label="Call Phone" class="social-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Karimnagar, Telangana</span>
+                </div>
+
+                <!-- Quick Stats Badge Bar -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">8.1</span>
+                        <span class="stat-label">B.Tech CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">9.7</span>
+                        <span class="stat-label">Diploma CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">10/10</span>
+                        <span class="stat-label">SSC CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">ML & Web Projects</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Avatar Frame -->
+            <div class="hero-visual">
+                <div class="avatar-wrapper">
+                    <div class="avatar-ring"></div>
+                    <img src="profile.png" alt="Padala Tejaswini" class="avatar-img">
+                    
+                    <!-- Floating Tech Pills -->
+                    <div class="tech-pill pill-1">
+                        <i class="fa-brands fa-python" style="color: #3776AB;"></i> Python
+                    </div>
+                    <div class="tech-pill pill-2">
+                        <i class="fa-brands fa-java" style="color: #F89820;"></i> Java
+                    </div>
+                    <div class="tech-pill pill-3">
+                        <i class="fa-solid fa-chart-pie" style="color: #F2C811;"></i> Power BI
+                    </div>
+                    <div class="tech-pill pill-4">
+                        <i class="fa-solid fa-eye" style="color: #5C2D91;"></i> OpenCV
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Air Canvas – Gesture-Based Drawing</h3>
-            <img src="air-canvas.png" alt="Air Canvas Demo">
-            <p>Created a touchless digital drawing app using computer vision. Achieved 90% tracking accuracy.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">GET TO KNOW ME</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card main-about">
+                    <div class="card-icon"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3>Professional Summary</h3>
+                    <p>
+                        I am a <strong>Computer Science undergraduate (CGPA 8.1)</strong> passionate about designing and engineering software that solves real-world challenges. My expertise spans <strong>Java, Python, full-stack web development, machine learning, and data analytics</strong>.
+                    </p>
+                    <p>
+                        I have hands-on experience building ML-powered applications — ranging from intelligent fraud detection engines and AI model cost optimizers to real-time computer vision tools (sub-100ms gesture interaction and 30+ FPS vehicle detection). I am eager to bring strong problem-solving capabilities, adaptability, and a fast-learning mindset to a dynamic Software Engineering team.
+                    </p>
+                </div>
+
+                <div class="about-card quick-info">
+                    <h3>Quick Overview</h3>
+                    <ul class="info-list">
+                        <li>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <span>Degree</span>
+                                <strong>B.Tech in Computer Science & Engineering</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <strong>Karimnagar, Telangana, India</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <div>
+                                <span>Core Domains</span>
+                                <strong>AI/ML, Computer Vision, Web Dev, Data BI</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <strong>padalatejaswini2021@gmail.com</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <strong>+91 9394347220</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Age Calculator Web Application</h3>
-            <img src="age-calculator.png" alt="Age Calculator UI">
-            <p>Responsive web app with JavaScript for precise age calculations, including leap year handling.</p>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">MY TOOLKIT</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code category-icon"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-java" style="color:#f89820;"></i> Java (J2SE)</span>
+                        <span class="skill-tag"><i class="fa-brands fa-python" style="color:#3776AB;"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js" style="color:#F7DF1E;"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-solid fa-c" style="color:#A8B9CC;"></i> C</span>
+                        <span class="skill-tag"><i class="fa-solid fa-database" style="color:#336791;"></i> SQL</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-globe category-icon"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-html5" style="color:#E34F26;"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt" style="color:#1572B6;"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js" style="color:#F7DF1E;"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-solid fa-network-wired" style="color:#00F5A0;"></i> RESTful APIs</span>
+                        <span class="skill-tag"><i class="fa-solid fa-mobile-screen" style="color:#4FACFE;"></i> Responsive Web Design</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-brain category-icon"></i>
+                        <h3>Machine Learning & Data</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-robot" style="color:#7F00FF;"></i> Machine Learning</span>
+                        <span class="skill-tag"><i class="fa-solid fa-eye" style="color:#00F2FE;"></i> Computer Vision</span>
+                        <span class="skill-tag"><i class="fa-solid fa-camera" style="color:#5C2D91;"></i> OpenCV</span>
+                        <span class="skill-tag"><i class="fa-solid fa-calculator" style="color:#013243;"></i> NumPy</span>
+                        <span class="skill-tag"><i class="fa-solid fa-tree" style="color:#2E7D32;"></i> Random Forest</span>
+                        <span class="skill-tag"><i class="fa-solid fa-bolt" style="color:#FF9800;"></i> XGBoost</span>
+                        <span class="skill-tag"><i class="fa-solid fa-diagram-project" style="color:#E91E63;"></i> K-Nearest Neighbours (KNN)</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-chart-column category-icon"></i>
+                        <h3>Data & BI Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-database" style="color:#00758F;"></i> SQL / DBMS</span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-pie" style="color:#F2C811;"></i> Power BI</span>
+                        <span class="skill-tag"><i class="fa-solid fa-square-root-variable" style="color:#00BCF2;"></i> DAX (Data Analysis Expressions)</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 5 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-wrench category-icon"></i>
+                        <h3>Developer Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt" style="color:#F05032;"></i> Git</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github" style="color:#FFFFFF;"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code" style="color:#007ACC;"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fa-solid fa-moon" style="color:#2C2255;"></i> Eclipse</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 6 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-microchip category-icon"></i>
+                        <h3>Core CS Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-cubes" style="color:#4FACFE;"></i> Object-Oriented Programming (OOP)</span>
+                        <span class="skill-tag"><i class="fa-solid fa-sitemap" style="color:#00F5A0;"></i> Data Structures & Algorithms</span>
+                        <span class="skill-tag"><i class="fa-solid fa-arrows-spin" style="color:#FFB74D;"></i> Agile Methodologies</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 7 -->
+                <div class="skill-category full-width">
+                    <div class="category-header">
+                        <i class="fa-solid fa-comments category-icon"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-puzzle-piece" style="color:#00F2FE;"></i> Problem-Solving</span>
+                        <span class="skill-tag"><i class="fa-solid fa-bullhorn" style="color:#FF4081;"></i> Technical Communication</span>
+                        <span class="skill-tag"><i class="fa-solid fa-users" style="color:#7C4DFF;"></i> Team Collaboration</span>
+                        <span class="skill-tag"><i class="fa-solid fa-lightbulb" style="color:#FFEB3B;"></i> Fast Learner</span>
+                        <span class="skill-tag"><i class="fa-solid fa-sliders" style="color:#64FFDA;"></i> Adaptability</span>
+                        <span class="skill-tag"><i class="fa-solid fa-clock" style="color:#FF5722;"></i> Time Management</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, Java, JavaScript, C, Ruby</li>
-            <li>HTML5, CSS3, Responsive Web Design</li>
-            <li>Machine Learning, Computer Vision, OpenCV, NumPy, KNN</li>
-            <li>Git, GitHub, VS Code, Eclipse</li>
-            <li>Problem-Solving, Team Collaboration, Adaptability</li>
-        </ul>
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">WORK EXPERIENCE</span>
+                <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="experience-timeline">
+                <div class="timeline-card glass-card">
+                    <div class="timeline-badge">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <div class="timeline-role">
+                            <h3>Power BI Intern</h3>
+                            <h4>Cognifyz IT Solutions Pvt. Ltd.</h4>
+                        </div>
+                        <div class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i> May 2026 – Jun 2026
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <ul class="experience-bullets">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Created interactive dashboards and comprehensive business reports in <strong>Power BI</strong>, applying <strong>DAX</strong> to build calculated metrics and KPIs for in-depth data analysis.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Analyzed and transformed complex datasets, visualizing actionable insights through multiple chart types to support strategic, data-driven decision-making.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="timeline-footer">
+                        <span class="tech-badge">Power BI</span>
+                        <span class="tech-badge">DAX</span>
+                        <span class="tech-badge">Data Analysis</span>
+                        <span class="tech-badge">KPI Dashboards</span>
+                        <span class="tech-badge">Data Transformation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Education -->
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>B.Tech:</strong> Sree Chaithanya College of Engineering</p>
-        <p><strong>Diploma:</strong> Jyothishmathi Institute of Technology and Science</p>
-        <p><strong>SSC:</strong> Kakatiya High School</p>
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">MY RECENT WORK</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Project Filter Controls -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="aiml">AI & ML</button>
+                <button class="filter-btn" data-filter="vision">Computer Vision</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-category="aiml">
+                    <div class="project-img-wrapper">
+                        <img src="ai-spend-optimizer.png" alt="AI Spend Optimizer Screenshot">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Padala-tejaswini/-ai-spend-optimizer" target="_blank" class="overlay-btn" title="View Source Code">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category"><i class="fa-solid fa-robot"></i> AI / ML • Personal Project</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3 class="project-title">AI Spend Optimizer</h3>
+                        <p class="project-description">
+                            Built an intelligent tool to identify the most cost-effective AI model for given use cases. Tracks API token usage and GPU/CPU resource consumption with automatic cost-optimized task routing.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>AI Optimization</span>
+                            <span>Token Tracking</span>
+                            <span>Resource Analytics</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Padala-tejaswini/-ai-spend-optimizer" target="_blank" class="project-link">
+                                GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-category="aiml">
+                    <div class="project-img-wrapper">
+                        <img src="fraud-busters.png" alt="FraudBusters Ecommerce Fraud Detection Screenshot">
+                        <div class="project-overlay">
+                            <a href="https://github.com/P-Tejaswini/fraudbusters" target="_blank" class="overlay-btn" title="View Source Code">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category"><i class="fa-solid fa-shield-halved"></i> AI / ML • Personal Project</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3 class="project-title">FraudBusters – E-Commerce Fraud Detection</h3>
+                        <p class="project-description">
+                            Developed a robust fraud detection system leveraging Random Forest and XGBoost algorithms to identify fraudulent transactions and flag suspicious patterns, trained on Kaggle fraud datasets.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Random Forest</span>
+                            <span>XGBoost</span>
+                            <span>Kaggle Dataset</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/P-Tejaswini/fraudbusters" target="_blank" class="project-link">
+                                GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-category="vision">
+                    <div class="project-img-wrapper">
+                        <img src="no-parking.png" alt="No-Parking Vehicle Detection System Screenshot">
+                        <div class="project-overlay">
+                            <a href="#contact" class="overlay-btn" title="Request Project Demo">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category"><i class="fa-solid fa-video"></i> AI & Computer Vision</span>
+                            <span class="project-year">May – Aug 2024</span>
+                        </div>
+                        <h3 class="project-title">No-Parking Vehicle Detection System</h3>
+                        <p class="project-description">
+                            Architected a real-time ML computer vision pipeline achieving 92% detection accuracy at 30+ FPS. Seamlessly integrated with backend services for automated violation reporting.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>NumPy</span>
+                            <span>30+ FPS Real-Time</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="role-tag"><i class="fa-solid fa-user-tag"></i> Role: AI/Computer Vision Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <img src="digital-complaint.png" alt="Digital Complaint System Screenshot">
+                        <div class="project-overlay">
+                            <a href="#contact" class="overlay-btn" title="Request Details">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category"><i class="fa-solid fa-laptop-code"></i> Full-Stack Web App</span>
+                            <span class="project-year">Jan – Feb 2025</span>
+                        </div>
+                        <h3 class="project-title">Digital Complaint System with Resolution Tracking</h3>
+                        <p class="project-description">
+                            Engineered a full-stack civic complaint management platform featuring RESTful APIs enabling citizens to submit, track, and manage issues across Pending, In-Progress, and Resolved states.
+                        </p>
+                        <div class="project-tech">
+                            <span>Full-Stack</span>
+                            <span>RESTful APIs</span>
+                            <span>JavaScript</span>
+                            <span>HTML5/CSS3</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="role-tag"><i class="fa-solid fa-user-tag"></i> Role: Full-Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card" data-category="vision">
+                    <div class="project-img-wrapper">
+                        <img src="air-canvas.png" alt="Air Canvas Gesture Drawing Screenshot">
+                        <div class="project-overlay">
+                            <a href="#contact" class="overlay-btn" title="Request Details">
+                                <i class="fa-solid fa-hand"></i> Demo Info
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category"><i class="fa-solid fa-hand-pointer"></i> Computer Vision & HCI</span>
+                            <span class="project-year">Mar 2025</span>
+                        </div>
+                        <h3 class="project-title">Air Canvas – Gesture-Based Drawing Application</h3>
+                        <p class="project-description">
+                            Built an interactive touchless digital drawing canvas using OpenCV hand-tracking and gesture recognition, achieving ultra-smooth interaction with sub-100ms latency.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Gesture Recognition</span>
+                            <span>Sub-100ms Latency</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="role-tag"><i class="fa-solid fa-user-tag"></i> Role: CV & HCI Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <img src="age-calculator.png" alt="Age Calculator Screenshot">
+                        <div class="project-overlay">
+                            <a href="#contact" class="overlay-btn" title="Front-End Demo">
+                                <i class="fa-solid fa-calculator"></i> Demo Info
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category"><i class="fa-solid fa-code"></i> Front-End Web App</span>
+                            <span class="project-year">Jan – Feb 2025</span>
+                        </div>
+                        <h3 class="project-title">Age Calculator Web Application</h3>
+                        <p class="project-description">
+                            Developed a highly responsive web application built with HTML5, CSS3, and JavaScript featuring precise age calculation logic, leap year edge-case handling, and timezone support.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive UI</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="role-tag"><i class="fa-solid fa-user-tag"></i> Role: Front-End Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <!-- Certifications -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Machine Learning Foundation – AI for ALL</li>
-            <li>Basics of Java Programming</li>
-            <li>Fundamentals of Artificial Intelligence Guided Path</li>
-            <li>KNN Algorithm in Python and R</li>
-        </ul>
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">ACADEMIC BACKGROUND</span>
+                <h2 class="section-title">Education <span class="gradient-text">Journey</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="education-grid">
+                <!-- Education Card 1 -->
+                <div class="edu-card glass-card">
+                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="edu-year">2024 – 2027</div>
+                    <h3>Bachelor of Technology (B.Tech)</h3>
+                    <h4>Computer Science Engineering</h4>
+                    <p class="edu-inst">Sree Chaithanya College of Engineering</p>
+                    <div class="edu-score-badge">
+                        <i class="fa-solid fa-star"></i> CGPA: <strong>8.1 / 10</strong>
+                    </div>
+                </div>
+
+                <!-- Education Card 2 -->
+                <div class="edu-card glass-card">
+                    <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="edu-year">2021 – 2024</div>
+                    <h3>Diploma in Engineering</h3>
+                    <h4>Computer Science Engineering</h4>
+                    <p class="edu-inst">Jyothishmathi Institute of Technology and Science</p>
+                    <div class="edu-score-badge highlight">
+                        <i class="fa-solid fa-trophy"></i> CGPA: <strong>9.7 / 10</strong> (Distinction)
+                    </div>
+                </div>
+
+                <!-- Education Card 3 -->
+                <div class="edu-card glass-card">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-year">2021</div>
+                    <h3>Secondary School Certificate (SSC)</h3>
+                    <h4>General Studies</h4>
+                    <p class="edu-inst">Kakatiya High School</p>
+                    <div class="edu-score-badge highlight-gold">
+                        <i class="fa-solid fa-medal"></i> CGPA: <strong>10 / 10</strong> (Perfect Score)
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <footer>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:padalatejaswini2021@gmail.com">padalatejaswini2021@gmail.com</a></p>
-        <p>Phone: +91 9394347220</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tejaswinipadala42">linkedin.com/in/tejaswinipadala42</a></p>
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">VERIFIED CREDENTIALS</span>
+                <h2 class="section-title">Certifications & <span class="gradient-text">Courses</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="certifications-grid">
+
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+                    <div class="cert-details">
+                        <h3>Python + AI Skills to Ace 30 LPA+ Data Roles</h3>
+                        <p class="cert-org">Coding Ninjas (in collaboration with Microsoft roles)</p>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="cert-details">
+                        <h3>Fundamentals of Artificial Intelligence</h3>
+                        <p class="cert-org">Code360 • <span class="cert-date">Dec 2025</span></p>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+                    <div class="cert-details">
+                        <h3>Basics of Java – Part I (Guided Path)</h3>
+                        <p class="cert-org">Code360 • <span class="cert-date">Jan 2026</span></p>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="cert-details">
+                        <h3>KNN Algorithm in Python and R | GenAI for Everyone</h3>
+                        <p class="cert-org">Analytics Vidhya • <span class="cert-date">Dec 2025</span></p>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-solid fa-unlock-keyhole"></i></div>
+                    <div class="cert-details">
+                        <h3>Unlocking AI for Everyone (Beginner)</h3>
+                        <p class="cert-org">Skill India (NCVET) / Microsoft • <span class="cert-date">Mar 2026</span></p>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="cert-details">
+                        <h3>Critical Thinking in the AI Era</h3>
+                        <p class="cert-org">HP LIFE / HP Foundation • <span class="cert-date">Jan 2026</span></p>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card full-span">
+                    <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="cert-details">
+                        <h3>Cyber Awareness & Digital Hygiene</h3>
+                        <p class="cert-org">CyberWalNet • <span class="cert-date">Mar 2026</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Extracurriculars Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">HONORS & ACTIVITIES</span>
+                <h2 class="section-title">Achievements & <span class="gradient-text">Extracurriculars</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">State Distinction</span>
+                        <h3>State 2nd Rank – English Typewriting</h3>
+                        <p>Secured 2nd rank at the state level in English Typewriting examinations, demonstrating exceptional speed, accuracy, and keyboard precision.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Hackathon</span>
+                        <h3>Internal College Hackathon Participant</h3>
+                        <p>Participated in the Internal Hackathon at Sree Chaithanya College of Engineering, collaborating with peers to prototype tech solutions under tight deadlines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">LET'S CONNECT</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info Cards -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>I am open to software engineering internships, entry-level developer roles, and project collaborations. Feel free to reach out!</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="method-details">
+                                <span>Email Me</span>
+                                <a href="mailto:padalatejaswini2021@gmail.com">padalatejaswini2021@gmail.com</a>
+                            </div>
+                            <button class="copy-btn" onclick="copyText('padalatejaswini2021@gmail.com', this)" title="Copy Email">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="method-details">
+                                <span>Call / WhatsApp</span>
+                                <a href="tel:+919394347220">+91 9394347220</a>
+                            </div>
+                            <button class="copy-btn" onclick="copyText('+919394347220', this)" title="Copy Phone Number">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="method-details">
+                                <span>LinkedIn Profile</span>
+                                <a href="https://linkedin.com/in/tejaswinipadala42" target="_blank">tejaswinipadala42</a>
+                            </div>
+                            <a href="https://linkedin.com/in/tejaswinipadala42" target="_blank" class="copy-btn" title="Open LinkedIn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="method-details">
+                                <span>GitHub Repositories</span>
+                                <a href="https://github.com/Padala-tejaswini" target="_blank">Padala-tejaswini</a>
+                            </div>
+                            <a href="https://github.com/Padala-tejaswini" target="_blank" class="copy-btn" title="Open GitHub">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="method-details">
+                                <span>Location</span>
+                                <p>Karimnagar, Telangana, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card glass-card">
+                    <h3>Send Me a Message</h3>
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Project discussion / Job Opportunity">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="form-toast" class="form-toast"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-badge">PT</span>
+                    <span class="logo-text">Tejaswini<span class="dot">.</span></span>
+                </a>
+                <p>&copy; 2026 Padala Tejaswini. Built with precision, passion, and modern web tech.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/Padala-tejaswini" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/tejaswinipadala42" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:padalatejaswini2021@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="#hero" class="back-to-top" title="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
     </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
